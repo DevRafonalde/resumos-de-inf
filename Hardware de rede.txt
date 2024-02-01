@@ -1,0 +1,367 @@
+Hardware de rede
+
+Há dois tipos de tecnologia 
+Enlaces ponto a ponto;
+Transmissão ponto a ponto com exatamente um transmissor e extamente um receptor às vezes é chamada de unicasting
+
+ Enlaces Broadcast
+Tem apenas um canal de comunicação, compartilhado por todas as máquinas da rede
+
+Redes pessoais - PAN
+Redes locais - LAN
+Redes metropolitanas - MAN
+Redes interligadas - INTERNET
+
+O modelo OSI tem sete camadas
+
+1 Física
+Quando um lado enviar um bi1, o outro lado o receberá como um bit 1, não como um bit 0
+
+2 Enlace de dados
+Transforar um canal de transmissão normal em uma linha que pareça livre de erros de transmissão/controle de acessos ao meio
+
+3 REDE]
+Controla a operação da sub-rede. Determina a maneira como os pacotes são roteados da origem até o destino.
+
+4 Transporte
+Aceitar dados da cama acima dela, dividi-los em unidades menores; garantir que todos os fragmentos chegarão corretamente à outra extremidade
+
+5 Sessão
+Sessões de comunicação entre eles (usuarios)
+
+6 Apresentaqção
+Sintaxe a semântica das informações transmitidas
+
+7 Aplicação
+Protocolos comumente necessários para os usuários
+
+
+TCP/IP
+Aplicação: Todos os protocolos de nível mais alto. 
+; Transporte: TCP E UDP
+ Internet; Enlace
+
+
+
+802.1 Avaliação e arquitetura de LANs
+802.3 Ethernet
+802.11 LANs sem fios (WIFI)
+802.15 Redes pessoais (bluetooth, Zigbee)
+
+TOPOLOGIAS
+
+Linear/barramento
+Anel;
+Estrela
+- Tem um elemento central
+Topologia estrela HUB
+Configuração fisicamente em estrela;
+Logicamente continua sendo uma rede de topologia linear;
+
+Topologia estrela (SWITCH)
+Tanto física quanto logicamente em estrela;
+
+Tipologica Malha
+
+Tipologia hierárquica
+
+**O volume de ruido térmico presente é medido pela relação entre a potência do sinal e a do ruído chamada relação sinal/ruido, ou SNR (signal-to-noise ratio)
+
+
+Núcleo de cobre --> Material isolante --> Condutor externo em malha --> Capa plástica protetora.
+
+50 OHMS digital 0 ou 1
+
+75 OHMS analógico
+
+- Transmissão de rádio
+
+São fáceis de gerar;
+Podem percorrer longas distâncias;
+Penetram facilmente paredes;
+Viajam em todas as direções (omnidirecionais)
+
+Transmissão microondas
+Não atravessam muito bem as paredes
+Enfraquecimento por multiplos caminhos (multipath fading)
+Usado na telefonia
+É economico
+
+Transmissão infravermelho
+Curto alcance;
+São direcionais e economicos
+Não atravessam parede, mas acaba virando uma qualidade;
+
+Transmissão via luz
+Usada pra conectar as LANs em dois prédios por meio de lasers no telhado; É unidirecional, seguro e fácil de ser instalado; É uma tecnologia exótica atualmente
+
+- O que é um Modem?
+Um dispositivo que converte entre um fluxo de bits digitais e um sinal analógico que representa os bits; abreviação de modulador-de-modulador
+
+- Serviços oferecidos à camada de redes
+Confiabilidade (controle de erros e fluxo)
+Principal serviço é transferir dados da camada de rede da máquina de origem para a cama de rede da máquina de destino.
+
+Três possibilidades razoáveis que consideraremos são:
+1. serviço não orientado a conexões sem confirmação;
+2. serviço não orientado a conexões com confirmação;
+3. serviço orientado a conexões com confirmação.
+
+	- Serviço não orientado a conexões e sem confirmação
+Enviar quadros independentes à máquina de destino;
+O destino não confirma o recebimento desses quadros
+EX: ETHERNET
+
+Esse tipo de serviço é apropriado quando:
+Taxa de erros é muito baixa;
+Há tráfego em tempo real (voz, vídeo)
+
+	- Serviço não orientado a conexões e com confirmação
+Ainda não há conexões lógicas sendo usadas;
+Mas cada quadro enviado é confirmado individualmente.
+
+Esse serviço é útil em canais não confiáveis, como os sistemas sem fio
+
+* As máquinas de origem e destino estabelecem uma conexão antes do dado ser transferido
+
+* Além disso, essa camada garante que todos os quadros serão recebidos uma única vez e na ordem correta
+
+- Enquadramento
+A estratégia adotada pela camada de enlace de dados, para corrigir erros, é
+Dividir fluxo de bits em quadros distintos;
+Calcular um pequeno valor (um token), chamado de checksum (somátorio de verificação) para cada quadro e;
+Incluir essa soma de verificação no quadro quando ele for transmitido.
+
+Quando um quadro chega a seu destino, o checksum é recalculado.
+Se o checksum for diferente, houve um erro
+
+- Controle de fluxos
+Dois tipos
+1. Controle de fluxo baseado em feedback;
+2. Controle de fluxo baseado em velocidade;
+
+- Código de correção de erros
+Existem quatro tipos de código
+1. Códigos de Hamming;
+2. Códigos de convolução binários;
+3. Códigos de Reed-Solomon;
+4. Códigos de verificação de paridade de baixa densidade;
+
+- Códigos de detecção de erros
+Examinaremos três códigos de detecção de erros.
+1. Paridade;
+2. Checksums;
+3. Verificações de redundância ciclica (CRCs).
+
+- Exemplos de protocolos de enlace
+O PPP dispõe e três recursos principais
+Um método de enquadramento;
+Um protocolo de controle de enlace, OU LCP (Link Control Protocol)
+Um protocolo de controle de rede, ou NCP (Netword Control Protocol)
+
+- Alocação dinâmica de canais
+5 premissão fundamentais para este tipo de alocação.
+
+1. Tráfego independente;
+2. Premissa de canal único;
+3. Colisões observáveis;
+4. Tempo contínuo ou segmentado (slotted)
+5. Detecção de portadora (carrier sense) ou sem detecção de portadora
+
+-ALOHA
+Duas versões do ALOHA: ORIGINAL E SLOTTED
+
+
+- Protocolos e acesso múltiplo com detecção de portadora
+
+CSMA persistente
+Quandop uma estação tem dados a transmitir, primeiro ela escuta o canal para ver se mais alguém está transmitindo no momento
+
+CSMA NÃO persistente
+Antes de transmitir, a estação escuta o canal e, se ninguém mais estiver transmitindo, inicia a transmissão
+
+CSMA P-persistente
+Quando está pronta para transmitir, a estação escuta o canal. Se ele estiver desocupado, a estração transmite com uma probabilidade p.
+
+CSMA com detecção de colisões
+Esse protocolo, conhecido como CSMA/CD, é a base da LAN Ethernet clássica
+
+- ETHERNET
+Clássica: Velocidades de 3 a 10 Mbps; Utiliza o CSMA/CD
+
+Comutada: Velocidades de 100, 1000 e 10000 Mbps 
+
+802.11b
+- Admite taxas de 1,2,5,5 e 11 Mbps
+- Lançado primeiro do que o 802.11a
+- Opera na banda ISM estreita de 2,4 GHz
+
+802.11a
+- Admite taxas de 6 ate 54 Mbps na banda ISM de 5 GHz
+- Baseado na multiplexação por divisão ortogonal de frequência, ou OFDM
+
+802.11G
+- Copia os métodos de modulação OFDM do 802.11a
+- Opera na banda ISM estreita de 2,4 GHz
+- Mesma taxa do 802.a + compatibilidade com dispositivos 802.11
+
+802.11n
+- Objetivo foi um throughput (quantidade de dados transferidos de um lugar a outro) de pelo menos 100 Mbps
+
+- CAMADA DE REDE
+Serviços oferecidos à camada de transporte
+ Os serviços precisam ser cuidadosamente planejados tendo em vista os objetivos a seguir:
+1. Os serviços devem ser independentes da tecnologa presente nos roteadores
+2. A camada de transporte deve ser isolada do número, do tipo e da topologia dos roteadores;
+3. Os endereços de rede que tornam os pacotes disponíveis para a camada de transporte devem usar um plano de numeração uniforme.
+
+UII - Uniforme, Isolado, Independente
+
+- IMPLEMENTAÇÃO DO SERVIÇO NÃO ORIENTADO A CONEXÃO.
+Os endereços tem 32 bits nos pacotes IPv4 E 128 bits nos pacotes IPv6
+
+- ALGORITMOS DE ROTEAMENTO
+Algoritmo de roteamento: É a parte do software da camada de rede responsável pla decisão sobre a interface de saída a ser usada na transmissão do pacote de entrada.
+
+Datagrama: Decisão tomada mais de uma vez para cada pacote recebido.
+
+Circuitos visuais: Decisão tomada apenas uma vez (chamado de roteamento por sessão)
+
+Roteamento: tomada de decisão sobre quais rotas utilizar
+
+Encaminhamento: é o que acontece quando um pacote chega
+
+
+Algoritmos de Controle de Congestionamento
+
+-Roteamento com conhecimento do tráfego
+-Controle de aceddo
+-Controle de tráfego
+-Pacotes Reguladores
+-Notificação explícita de congestionamento
+-Pacotes reguladores de hop a hop
+
+Nada funfa? CORTE DE CARGA (descartar)
+
+Alocação de recursos = FIFO
+
+
+	TUNELAMENTO
+-Ligação entre 2 redes iguais com uma diferente no meio do caminho
+-Rede resultante = overlay
+
+Pacotes do Overlay não podem escapar dele - VPN = Rede Segura
+
+
+	PROTOCOLO DE ROTEAMENTO ENTRE REDES
+Internet = BGP (Border Gateway Protocol)
+
+	IPv4 (Cabeçalho + dados) - 32 BITS
+Cabeçalho - 20 bytes + opcional de tamanho variável
+
+	CAMPOS CABEÇALHO
+-Versão = Indica a versão do protocolo, e o campo IHL informa o tamanho do cabeçalho;
+-Serviços = Marca o pacote com sua classe de serviço;
+-Tamanho Total = Inclui tudo no datagrama, com tamanho máximo de 65.535 bytes;
+-Identificação, MF e Deslocamento de fragmento = São usados para implementar a fragmentação;
+-TTL = Limita a vida útil dos pacotes;
+-Protocolo = Indica o processo de transporte ao qual o datagrama deve ser entregue;
+-Checksum = Protege o cabeçalho;
+-Endereços de origem e destino = Indicam os endereços IP das interfaces de origem e destino;
+-Opções = permite incluir informações adicionais, mas atualmente é pouco usado.
+
+-Cada IR tem um ip, não dispositivo. Ex.: Roteador, pode ter vários ips, pois tem várias IR
+-Dividido em:
+	-Identificação de rede ou prefixo: Determina a qual rede o ip pertence;
+	-Identificação de host: Determina qual é o computador/dispositivo na rede
+
+-Parte de rede é a mesma para todos os hosts em uma mesma rede
+
+Objetivo - identificar os computadores e dispositivos na rede
+-Sempre possui 4 números
+-0 até 
+-Um IP é composto por 4 octetos (Ex: 192.168.0.115, cada número tem 8 bits, por isso octeto)
+-Os IPs são divididos em 5 classes
+	-A, B, C são usadas pela internet
+	-D é destinada a Multicast
+	-E para teste de tecnologias futuras
+-IP é formado por 32 bits (4 octetos)
+
+CLASSES:
+-A = de 0 a 127, máscara de rede = 255.0.0.0 = /8 
+Ex.: 10.0.5.30
+	Rede = 10
+	Host = 0.5.30
+-B = de 128 a 191, máscara de rede = 255.255.0.0 = /16
+Ex.: 172.16.15.20
+	Rede = 172.16
+	Host = 15.20
+-C = de 192 a 223, máscara de rede = 255.255.255.0 = /24
+Ex.: 192.168.0.1
+	Rede = 192.168.0
+	Host = 1
+-D = de 224 a 239
+-E = de 240 a 255
+
+OBS: O octeto equivalente ao 255 na máscara de rede corresponde à parte fixa da rede, o resto é equivalente ao host
+
+Caso o IP mostra ser de uma classe mas a máscara mostra ser de outra, ele continua sendo da classe do IP mas obedecendo a máscara de outra classe.
+
+
+Cálculo de Sub-Rede
+
+1-Mascara de rede? Octeto Misto?
+2-Converter octeto misto para binário
+3-Determinar salto ou intervalo (último bit 1 da esquerda para a direita)
+4-Determinar todas as sub-redes (somatório do valor do salto até 256)
+5-Determinar todos os broadcasts (Próxima sub-rede - 1)
+6-Determinar todos os hosts (Valor entre rede e broadcast)
+
+127.0.0.1 = RESERVADO PARA CONECTIVIDADE LOCAL / LOOPBACK
+
+Qntd de hosts = 2^N - 2; N = Qntd de 0 na conversão da máscara de rede padrão para binário
+Qntd de Sub-Redes = 2^N; N = Qntd de 1 na conversão do octeto misto para binário (ou parte 4 do cálculo)
+
+
+	CAMADA DE TRANSPORTE
+Primitivas:
+	-LISTEN
+	-CONNECT
+	-SEND
+	-RECEIVE
+	-DISCONNECT
+
+Protocolos de Transporte
+-UDP - RTP (Real-Time Transport Protocol):
+	-Não orientado a conexões
+	-Aplicações podem criar seus próprios protocolos em cima
+-TCP:
+	-Orientado a conexões
+	-Faz conexões e acrescenta confiabilidade com retransmissões !!!
+	-Tem controle de fluxo e congestionamento
+
+Portas Conhecidas:
+20, 21 = FTP - Transferência de arquivos
+22 = SSH - Login Remoto
+25 = SMTP - Correio Eletrônico
+80 = HTTP - World Wide Web
+110 = POP-3 - Acesso remoto a correio eletrônico
+143 = IMAP - Acesso remoto a correio eletrônico
+443 = HTTPS - Web segura (HTTP sobre SSL/TLS)
+543 = COntrole de player de mídia
+631 = IPP - Compartilhamento de impressora
+
+Estados da Conexão TCP
+CLOSED - Nenhuma conexão ativa ou pendente
+LISTEN - O servidor está esperando a chegada de uma chamada
+SYN RCVD - Uma solicitação de conexão chegou; espera por ACK
+SYN SENT - A aplicação começou a abrir uma conexão
+ESTABLISHED - O estado normal para a transferência de dados
+FIN WAIT 1 - A aplicação informou que terminou de transmitir
+FIN WAIT 2 - O outro lado concordou em encerrar
+TIME WAIT - Aguarda a entrega de todos os pacotes
+CLOSING - Ambos os lados tentaram encerrar a transmissão simultaneamente
+CLOSE WAIT - O outro lado deu início a um encerramento
+LAST ACK - Aguarda a entrega de todos os pacotes
+
+	CERTIFICADOS DIGITAIS - X.509

@@ -1,0 +1,15 @@
+UML é uma linguagem de modelagem padrão;
+Metodologia ou processo define um procedimento/desvre como projetar software
+Um estereótipo é um elemento da UML que permite que você amplie o vocabulário da própria UML;
+Um relacionamento descreve como as classes interagem entre si. Na UML, um relacionamento é uma conexão entre dois ou mais elementos da notação.
+
+
+Dependência 
+- - - - >
+
+Associação ___________
+- Agregação: Um objeto contém o outro; ________ (Quadrado aberto)
+- Composição: Objeto independente; ______(Quadrado fechado)
+
+Generalização _______>
+
