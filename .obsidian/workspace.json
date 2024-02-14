@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "1107e77144496276",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e81cf1714eafc4b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bcaf3ce8d5fb6526",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Discos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bde6ef4f61e60412",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Sistemas de arquivos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ebf63b0a2e5bfaab",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb31f15f5ad1cf3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfefd6c4f68d4bac",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d8126075a541567c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9a27f71f4b89890e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "844e1b5f30990bda",
+    "type": "split",
+    "children": [
+      {
+        "id": "45b904d4fbf653b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df9364af22bb198c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Linux/Sistemas de arquivos.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "816a7efdb00c74b0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Linux/Sistemas de arquivos.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "08ba2d1eeab81067",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "654fe0ae329e580f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Linux/Sistemas de arquivos.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "bde6ef4f61e60412",
+  "lastOpenFiles": [
+    "Linux/Discos.md",
+    "Linux/Sistemas de arquivos.md",
+    "Linux/Introdução e comandos de boot - LINUX.md",
+    "Linux/Root e Processos.md",
+    "Linux/Usuarios.md"
+  ]
+}
