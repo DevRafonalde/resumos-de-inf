@@ -20,7 +20,7 @@ Quando um lado enviar um bi1, o outro lado o receberá como um bit 1, não como 
 2 Enlace de dados
 Transforar um canal de transmissão normal em uma linha que pareça livre de erros de transmissão/controle de acessos ao meio
 
-3 REDE]
+3 REDE
 Controla a operação da sub-rede. Determina a maneira como os pacotes são roteados da origem até o destino.
 
 4 Transporte
