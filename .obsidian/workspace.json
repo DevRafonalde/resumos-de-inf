@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1e81cf1714eafc4b",
+        "id": "2ce4174761920fab",
         "type": "tabs",
         "children": [
           {
-            "id": "bcaf3ce8d5fb6526",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Discos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bde6ef4f61e60412",
+            "id": "edebfd9fa79f888f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,8 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bde6ef4f61e60412",
+  "active": "edebfd9fa79f888f",
   "lastOpenFiles": [
+    "2024-02-14.md",
+    "Untitled.canvas",
+    "Hardware/RAIDs.md",
+    "Hardware/MEMÓRIAS FLASH.md",
     "Linux/Discos.md",
     "Linux/Sistemas de arquivos.md",
     "Linux/Introdução e comandos de boot - LINUX.md",
