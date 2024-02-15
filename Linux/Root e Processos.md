@@ -1,6 +1,7 @@
 # PODERES DO ROOT
 
 ## POSSE DE ARQUIVOS E PROCESSOS
+
 - Todo arquivo tem um usuário e um grupo proprietário
 - O proprietário do arquivo pode modificar as permissões do arquivo
 - Os grupos são definidos no arquivo "/etc/group"
@@ -11,6 +12,7 @@
 - Os GIDs são associados a nomes de grupos no arquivo "/etc/group"
 
 ## O SUPERUSUÁRIO (root)
+
 - Não deixa log
 - Usar o comando "su" para acessar, ele solicita a senha do root e inicializa o shell root
 - O comando "sudo" tem a capacidade de dar a alguém o acesso de admin, sem que essa pessoa tenha livre acesso ao sistema
@@ -18,15 +20,18 @@
 - Para modificar o arquivo "/etc/sudoers", utilizamos o comando "visudo"
 
 ## PSEUDO-USUÁRIOS
+
 - Root
 - Bin: Proprietário herdado de comandos de sistema
 - Daemon: Proprietário de software de sistema não-privilegiado
 - Nobody: O usuário NFS genérico
 
 ## CONTROLE DE PROCESSOS
+
 - Processo é uma abstração utilizada pelo Linux para representar um programa em execução
 
 ### COMPONENTES DE UM PROCESSO
+
 - Espaço de endereços
   - Conjunto de páginas de memória que o kernel marcou para ser empregado pelo processo.
 
@@ -55,6 +60,7 @@
   - Sistema que cria uma cópia do processo original que é, em grande parte, idêntica ao pai
 
 ## NICE E RENICE
+
 - Um valor nice alto significa baixa prioridade, pois ele é muito gentil, para o seu processo.
 - Um valor nice baixo ou negativo significa alta prioridade, pois ele é pouco gentil.
 - O valor nice pode variar de -20 até +19
@@ -64,6 +70,7 @@
   - `# renice 5 -u rafael` // Ajusta o valor nice dos processos do usuário rafael como 5
 
 ## PS: MONITORANDO PROCESSOS
+
 - `ps` é o principal comando do admin de sistemas para monitoramento de processos, ele exibe:
   - PID
   - UID
@@ -78,10 +85,12 @@
   - `-x`: Mostra processos que não são controlados pelo terminal
 
 ## TOP: MONITORANDO MELHOR OS PROCESSOS
+
 - Fornece um resumo regularmente atualizado dos processos ativos e o uso de recursos
 - Por padrão, é atualizado a cada 10 segundos e os processos mais ativos aparecem no alto
   - `# top`
 
 ## /PROC
+
 - O "ps" e o "top" leem suas informações sobre o status de um processo a partir do diretório "/proc", um pseudo-sistema de arquivo em que o kernel expõe uma variedade de informações interessantes sobre o estado do sistema
 - Apesar do nome "/proc", as informações não estão limitadas às informações sobre processos, todas as informações sobre o status e as estatísticas geradas pelo kernel são representadas aqui

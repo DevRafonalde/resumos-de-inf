@@ -2,7 +2,8 @@
 
 ## INICIALIZAÇÃO
 
-### BOOTSTRAPPING:
+### BOOTSTRAPPING
+
 - Carregamento e inicialização do kernel
 - Detecção e configuração de dispositivos
 - Criação de threads do Kernel para processos de sistemas espontâneos
@@ -12,11 +13,13 @@
 
 ### INICIALIZAÇÃO LILO E GRUB
 
-#### LILO:
+#### LILO
+
 - Rotina Tradicional
 - Ofuscada pelo GRUB
 
-#### GRUB:
+#### GRUB
+
 - Permite uma variedade de SOs na mesma máquina
 - NÃO deve ser reinstalado no registro de inicialização ou MBR
 - É instalado em uma unidade de inicialização executando o comando grub-install

@@ -16,9 +16,11 @@
      - Software que amarra o modelo lógico ao hardware em si
 
 ## NOMES DE CAMINHO
+
 - "/" = diretório raíz
 
 ## MONTAGEM E DESMONTAGEM
+
 - O comando "mount" ensina o SO a deixar um sistema de arquivos disponível para uso em um local específico denominado "ponto de montagem"
   - `# mount /dev/hda4 /users`
 - Uma lista dos sistemas que são normalmente montados em um sistema é mantida no arquivo /etc/fstab
@@ -27,6 +29,7 @@
 - O diretório raíz do processo é configurado através do "chroot"
 
 ## PERMISSÕES
+
 - `r` = Read = 4
 - `w` = Write = 2
 - `x` = Execute = 1
@@ -43,19 +46,23 @@
     - `# chmod U +/=/- r /usr/include`
 
 ## BITS SETUID E SETGID
+
 - `+/- S`
 - Faz aquele grupo (U, G, O ou A) executar com a permissão do root
   - `# chmod u+s usr/include`
 - O usuário proprietário da pasta vai estar executando os processos com a permissão do root
 
 ## STICKY BIT
+
 - Mesmo esquema de configuração do SETUID, mas com T ao invés do S
 - Não permite que usuários comuns apaguem ou renomeiem o arquivo, apenas o root e o proprietário
 
 ## CHOWN
+
 - Altera o proprietário e/ou o grupo de um arquivo/diretório
 
 ## UMASK
+
 - Manipula as permissões padrão dos arquivos, dizendo quais serão revogadas. Por exemplo:
   - `# umask 027`
   - Todas as permissões para o proprietário, nenhuma revogada;
@@ -65,6 +72,7 @@
   - O valor padrão de umask é 022.
 
 ## LS -LD
+
 - TIPO PERMISSOES QNTDLINKS PROPRIETÁRIO GRUPO TAMANHO(BYTES) DATAMOD CAMINHO
   - `# ls -ld /user/include`
   - `drwxrwxr-- 27 root root 4096 datahora /usr/include`
