@@ -17,7 +17,7 @@
 - `/var/log/wtmp`
   - Contém um registro de logins e logouts, reinicializações e desligamentos do sistema
   - É mantido em binário, se decodifica com `last`
-- `/var/logg/lastlog`
+- `/var/log/lastlog`
   - Mesmo esquema do `wtmp`, mas registra apenas o tempo de login
 - O arquivo de configuração `logrotate` é formado por especificações para gerenciamento de logs.
   - Excelente recurso para gerenciamento
