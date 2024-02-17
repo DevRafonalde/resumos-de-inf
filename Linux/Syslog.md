@@ -15,7 +15,7 @@
 ## Arquivos de log especiais
 
 - `/var/log/wtmp`
-  - Contém um reggistro de logins e logouts, reinicializações e desligamentos do sistema
+  - Contém um registro de logins e logouts, reinicializações e desligamentos do sistema
   - É mantido em binário, se decodifica com `last`
 - `/var/logg/lastlog`
   - Mesmo esquema do `wtmp`, mas registra apenas o tempo de login
