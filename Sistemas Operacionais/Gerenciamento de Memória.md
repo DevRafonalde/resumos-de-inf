@@ -31,4 +31,4 @@
 - O método encontrado ficou conhecido como **memória virtual**;
 - A ideia básica é que **cada programa tem seu próprio espaço de endereçamento**, o qual é dividido em blocos chamados de páginas;
 - Cada página é uma séria contígua de endereços. Elas são mapeadas na memória física, mas nem todas precisam estar lá ao mesmo tempo;
-- 
+- Quando o programa referencia uma parte que está nno hardware, a busca é rápida no hardware, caso não esteja na física, ele busca a parte que falta e reexecuta.
